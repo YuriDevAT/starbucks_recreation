@@ -6,6 +6,7 @@
   --gold: #CBAF7F;
   --beige: #FAF9F5;
   --grey: #f0f0f0;
+  --grey2: #f7f7f7;
   --black: #382f2d;
 }
 
@@ -17,6 +18,12 @@
 body {
   font-family: 'Lato', sans-serif;
   background-color: var(--beige);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    
+  }
 }
 
 /* ----------------  HEADER  ------------------- */
@@ -73,7 +80,7 @@ aside {
   align-items: flex-end;
 }
 
-li {
+#links li {
   border: 1px solid red;
   margin: 0px 0px -12px;
   padding: 10px 10px;
@@ -83,7 +90,7 @@ li {
   position: relative;
 }
 
-li:hover {
+#links li:hover {
   background-color: black;
   color: white;
 }
@@ -99,7 +106,7 @@ li:hover {
   font-size: 12px;
 }
 
-i {
+#finder i {
   color: var(--green);
   font-size: 18px;
   padding-right: 10px; 
@@ -117,7 +124,7 @@ i {
   background-image: url("https://docs.google.com/uc?export=download&id=1KzlZcn_02e13ZljNd68AXG_BLTaLg4tI");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;  
+  background-position: center; 
 }
 
 @media screen and (max-width: 512px) {
@@ -149,4 +156,94 @@ i {
 #text b {
   font-size: 30px;
   letter-spacing: 5.2px;
+}
+
+/* ---------- social media icons*/
+
+section {
+  border: 1px solid red;
+  border: 10px 0 solid white;
+  width: 100%;
+  background-color: var(--grey);
+}
+
+#social-media {
+  border: 1px solid red;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: var(--grey);
+  
+}
+
+#social-media i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: var(--black);
+}
+
+/* ----------- FOOTER -----------*/
+
+footer {
+  border: 1px solid red;
+  
+  background-color: var(--grey2);
+  color: var(--black);
+  
+}
+
+.footer {
+  border: 1px solid red;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  background-image: url("https://docs.google.com/uc?export=download&id=1C6R8UPxPe-ltId-mSLCFAwyUWHE0r4m8");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 15px;
+}
+
+.list {
+  border: 1px solid red;
+  
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  line-height: 3;
+  font-size: 12px;
+}
+
+.list > :first-child {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.three {
+  text-transform: uppercase;
+}
+
+.languages, .impressum {
+  list-style-type: none;
+  padding: 0;
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+}
+
+.languages li, .impressum li {
+  margin: 10px 5px;
+  padding-right: 10px;
+  border-right: 1px solid grey;
+}
+
+.copyright {
+  font-size: 10px;
 }
